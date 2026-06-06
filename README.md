@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI & ML Roadmap 2026 ??
 
-## Getting Started
+A production-ready interactive dashboard tracking the journey from Zero to Pro in AI Engineering and Machine Learning. Curated with the best-in-class resources from \oadmap.sh\, Andrej Karpathy, Andrew Ng, and more.
 
-First, run the development server:
+## ? Features
 
-```bash
+- **Interactive Curriculum**: 8 comprehensive phases (Phase 0-7) covering everything from Python basics to AI Agents and MLOps.
+- **Progress Tracking**: LocalStorage-backed progress persistence. Mark topics as completed and see your journey progress.
+- **Best-in-Class Resources**: Hand-picked videos, blogs, papers, and courses from industry leaders.
+- **Modern Tech Stack**: Next.js 15, Tailwind CSS v4, Framer Motion, and shadcn/ui.
+- **Glassmorphism UI**: High-fidelity dark mode dashboard with \"Nova\" design system.
+
+## ?? Getting Started
+
+First, install dependencies:
+
+\\\ash
+npm install
+\\\
+
+Then, run the development server:
+
+\\\ash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\\\
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the roadmap.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ??? Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS v4
+- **UI Components**: shadcn/ui (Radix UI)
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Data**: Curated Curriculum from \oadmap.sh\
 
-## Learn More
+## ?? Roadmap Coverage
 
-To learn more about Next.js, take a look at the following resources:
+- **Phase 0**: Prerequisites & Foundations (Python, Math)
+- **Phase 1**: Traditional Machine Learning (Scikit-Learn)
+- **Phase 2**: Deep Learning & PyTorch (Andrej Karpathy)
+- **Phase 3**: Large Language Models (LLMs) & Transformers
+- **Phase 4**: Embeddings & Vector Databases
+- **Phase 5**: RAG & Orchestration (LangChain, LlamaIndex)
+- **Phase 6**: AI Agents & Advanced Concepts
+- **Phase 7**: Evaluation & Deployment (MLOps)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Built with passion for the AI community.

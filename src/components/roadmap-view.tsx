@@ -401,6 +401,12 @@ function ResourceIcon({ type }: { type: Resource["t"] }) {
       return <Globe className="w-3.5 h-3.5 text-orange-400" />;
     case "blog":
       return <FileText className="w-3.5 h-3.5 text-purple-400" />;
+    case "tool":
+      return <Gamepad2 className="w-3.5 h-3.5 text-cyan-400" />;
+    case "api":
+      return <Globe className="w-3.5 h-3.5 text-amber-400" />;
+    case "model":
+      return <Rocket className="w-3.5 h-3.5 text-violet-400" />;
     default:
       return <Circle className="w-3.5 h-3.5 text-white/20" />;
   }
