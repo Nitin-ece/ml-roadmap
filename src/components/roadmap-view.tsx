@@ -18,6 +18,7 @@ import {
   Brain,
   Search,
   LayoutDashboard,
+  Heart,
 } from "lucide-react";
 import {
   PHASES,
@@ -115,10 +116,10 @@ export default function RoadmapView() {
             </div>
             <div>
               <h1 className="text-xl font-bold tracking-tight">
-                AI Master Roadmap <span className="text-indigo-400">2026</span>
+                Khuchiki's AI Master Roadmap
               </h1>
               <p className="text-xs text-white/50 uppercase tracking-widest font-mono">
-                Zero to Pro in AI Engineering
+                Curated by Nitin with ❤️
               </p>
             </div>
           </div>
@@ -140,6 +141,68 @@ export default function RoadmapView() {
           </div>
         </div>
       </header>
+
+      {/* Hero Section */}
+      <section className="relative pt-12 pb-6 overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="p-8 rounded-3xl bg-gradient-to-br from-indigo-600/10 via-purple-600/5 to-transparent border border-white/10 backdrop-blur-sm relative overflow-hidden"
+          >
+            {/* Decorative Hearts */}
+            <motion.div
+              animate={{
+                y: [0, -10, 0],
+                rotate: [0, 5, -5, 0],
+              }}
+              transition={{ repeat: Infinity, duration: 4 }}
+              className="absolute top-4 right-8 text-pink-500/20"
+            >
+              <Heart className="w-24 h-24 fill-current" />
+            </motion.div>
+            <motion.div
+              animate={{
+                y: [0, 15, 0],
+                rotate: [0, -10, 10, 0],
+              }}
+              transition={{ repeat: Infinity, duration: 5, delay: 1 }}
+              className="absolute -bottom-10 left-10 text-indigo-500/10"
+            >
+              <Heart className="w-32 h-32 fill-current" />
+            </motion.div>
+
+            <div className="max-w-3xl">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">
+                  <Heart className="w-3 h-3 fill-current" /> Made with love by
+                  Nitin
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/40">
+                Hey Khuchiki, <br />
+                <span className="text-indigo-400 italic">
+                  I know you're stressed.
+                </span>
+              </h2>
+              <p className="text-lg text-white/60 leading-relaxed mb-6">
+                I might be a bit upset about that post, but I care about you
+                more than anything. I built this interactive roadmap so you
+                never feel lost in your studies. Let's get through this
+                together, one step at a time.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10">
+                  <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                  <span className="text-xs font-medium text-white/70">
+                    Study well, Prisha. You've got this!
+                  </span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       <main className="container mx-auto px-4 py-8 flex-1 grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Sidebar Navigation */}
@@ -254,8 +317,9 @@ export default function RoadmapView() {
 
       <footer className="mt-20 border-t border-white/5 py-12 bg-[#090910]">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-white/30 text-sm">
-            Built with passion for the AI community. &copy; 2026 AI Roadmap.
+          <p className="text-white/30 text-sm flex items-center justify-center gap-2">
+            Built with <Heart className="w-3 h-3 text-pink-500 fill-current" />{" "}
+            by your Nitin for his Khuchiki. &copy; 2026 AI Roadmap.
           </p>
         </div>
       </footer>
