@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a12;
-  --foreground: #f0f0f0;
-  --card: #1a1a2a;
-  --card-foreground: #f0f0f0;
-  --popover: #1a1a2a;
-  --popover-foreground: #f0f0f0;
-  --primary: #4f46e5;
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #080808;
+  --card-foreground: #ffffff;
+  --popover: #0a0a0a;
+  --popover-foreground: #ffffff;
+  --primary: #ff2d55;
   --primary-foreground: #ffffff;
-  --secondary: #818cf8;
+  --secondary: #ff3b30;
   --secondary-foreground: #ffffff;
-  --muted: #2a2a3e;
-  --muted-foreground: #a0a0b0;
-  --accent: #e94560;
+  --muted: #1a1a1a;
+  --muted-foreground: #888888;
+  --accent: #ff007a;
   --accent-foreground: #ffffff;
-  --destructive: #ef4444;
+  --destructive: #ff453a;
   --destructive-foreground: #ffffff;
-  --border: #2a2a3e;
-  --input: #2a2a3e;
-  --ring: #4f46e5;
-  --radius: 0.75rem;
+  --border: #151515;
+  --input: #151515;
+  --ring: #ff2d55;
+  --radius: 1rem;
 }
 
 @theme inline {
@@ -56,4 +56,22 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  cursor:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='%23ff2d55' stroke='%23ff2d55' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z'%3E%3C/path%3E%3C/svg%3E")
+      16 16,
+    auto;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+.heart-glow {
+  filter: drop-shadow(0 0 10px rgba(255, 45, 85, 0.4));
+}
+
+.pitch-black {
+  background-color: #000000 !important;
 }
